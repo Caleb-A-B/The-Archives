@@ -16,7 +16,6 @@ h2{
 .header {
     position:fixed;
     width:100%;
-    max-width: 1200px;
     margin: 0 auto;
     left: 0;
     top: 0;
@@ -24,5 +23,11 @@ h2{
 .navbar{
     display: flex;
     align-items: center;
+    max-width: 1200px;
     justify-content: space-between;
+}
+.navbar .links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
 }
