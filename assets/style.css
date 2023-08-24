@@ -113,6 +113,19 @@ form .input-field label {
 .input-field input:is(:focus, :valid) ~ label {
     color:darkblue;
     font-size: .75rem;
-    transform: translateY(-50%);
+    transform: translateY(-150%);
 }
-.input-field input:focus
+.input-field input:focus {
+    border-color: goldenrod;
+}
+.input-field input:is(:focus, :valid){
+    padding: 16px 15px 0;
+}
+.form-box a{
+    color: goldenrod;
+    text-decoration: none;
+}
+.form-box a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+}
