@@ -71,11 +71,20 @@ body{
     border:2px solid goldenrod;
     transform: translate(-50%, -50%);
 }
+.form-popup .close-btn{
+    
+}
 .form-popup .form-box{
     display: flex;
 }
 .form-box .form-details{
     max-width: 330px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .form-box h2 {
     text-align: center;
@@ -128,4 +137,29 @@ form .input-field label {
 .form-box a:hover{
     color: whitesmoke;
     text-decoration: underline;
+}
+.form-box .forgot-pass{
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 1.0rem;
+}
+form button {
+    width: 100%;
+    outline:none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 14px 0;
+    border-radius: 3px;
+    background: rgb(51,49, 49);
+    color: whitesmoke;
+    cursor: pointer;
+    border: 1px solid;
+    transition: 0.2 ease;
+}
+form button:hover{
+    background: rgb(139, 106, 22);
+}
+.form-box .bottom-link{
+    text-align: center;
 }
