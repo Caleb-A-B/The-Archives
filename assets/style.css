@@ -72,7 +72,10 @@ body{
     transform: translate(-50%, -50%);
 }
 .form-popup .close-btn{
-    
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor:pointer
 }
 .form-popup .form-box{
     display: flex;
