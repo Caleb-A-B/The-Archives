@@ -31,10 +31,26 @@ body{
     max-width: 1200px;
     justify-content: space-between;
 }
+
+.navbar .menu-btn{
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
 .navbar .links {
     display: flex;
     list-style: none;
     gap: 35px;
+}
+.navbar .links .close-btn{
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5rem;
 }
 .navbar .links a {
     color:goldenrod;
@@ -193,6 +209,12 @@ form button:hover{
 .form-popup .signup{
     display: none;
 }
+.form-popup.show-signup .login{
+    display: none;
+}
+.form-popup.show-signup .signup{
+    display: flex;
+}
 
 .signup .policy-text{
     display: flex;
@@ -204,7 +226,42 @@ form button:hover{
     margin-right: 7px;
 }
 
+@media (max-width: 950px){
+    .navbar :is(.menu-btn, .links .close-btn) {
+        display: block;
+    }
+    .navbar {
+        padding: 15px 0;
+    }
+    .navbar .links{
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        padding-top: 60px;
+        text-align: center;
+        transition: 0.2s ease;
+    }
+    .navbar .links.show-menu {
+        left: 0;
+    }
+    .navbar .links a{
+        display: inline-flex;
+        margin: 20px 0;
+        font-size: 1.2rem;
+    }
+    .navbar .login-btn{
+        font-size: 0.9rem;
+        padding: 7px 10px;
+    }
+}
+
 @media (max-width: 760px){
+    .navbar :is(.menu-btn, .links .close-btn) {
+        display: block;
+    }
     .form-popup{
         width: 95%;
     }
